@@ -6,7 +6,7 @@ Sample Output
 Jenny    Ashley     Meera  Jane
 Samantha Christeen  Priya  Julia
 NULL     Ketty      NULL   Maria
-Explanation
+Explanation 
 
 The first column is an alphabetically ordered list of Doctor names.
 The second column is an alphabetically ordered list of Professor names.

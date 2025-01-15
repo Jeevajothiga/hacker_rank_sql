@@ -5,11 +5,11 @@ Root: If node is root node.
 Leaf: If node is leaf node.
 Inner: If node is neither root nor leaf node.
 
-SELECT N
-CASE
- WHEN P IS NULL THEN 'ROOT'
- WHEN N IS IN (SELECT P FROM BST) THEN 'INNER'
- ELSE 'LEAF'
-END AS NODE TYPE
-FROM BST
+SELECT N, 
+ CASE 
+  WHEN P IS NULL THEN 'Root' 
+  WHEN N IN(SELECT P FROM bst) THEN 'Inner' 
+  ELSE 'Leaf' 
+ END AS NodeType 
+FROM bst 
 ORDER BY N;

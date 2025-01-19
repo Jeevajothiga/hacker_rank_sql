@@ -4,7 +4,7 @@
 Root: If node is root node.
 Leaf: If node is leaf node.
 Inner: If node is neither root nor leaf node.
-
+ 
 SELECT N, 
  CASE 
   WHEN P IS NULL THEN 'Root' 
